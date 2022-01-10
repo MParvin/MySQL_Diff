@@ -19,4 +19,17 @@ Run the program:
 python main.py
 ```
 
-I recommened you use [screen](https://linux.die.net/man/1/screen), if you have a large database.
+I recommened you use [screen](https://linux.die.net/man/1/screen), if you have a large database;
+
+And instead of using `root` user create a readonly user:
+###### Mariadb
+```
+create user anyone@'%' identified by 'SECURE_PASSWORD';
+grant SELECT TO anyone@'%';
+```
+
+###### MySQL 8
+```
+create user anyone@'%';
+grant SELECT TO anyone@'%' identified by 'SECURE_PASSWORD';
+```
