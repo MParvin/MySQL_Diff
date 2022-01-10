@@ -12,7 +12,7 @@ Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-*** Use [virtualenv](https://pypi.org/project/virtualenv/)
+***Attention:*** Use [virtualenv](https://pypi.org/project/virtualenv/)
 
 Run the program:
 ```
